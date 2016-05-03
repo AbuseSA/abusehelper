@@ -208,5 +208,9 @@ In summary, the underlying idea of this ontology is to provide a good basis to b
 
 # History of this Document
 
-A public version of this document has been iterated over, since 2012. Originally, it was a collaboration between numerous CSIRT actors (CERT-EU, CERT-AT, CERT-FI, CERT.PT) and Codenomicon. The current version of this document represents the practical collaboration between CSIRT teams such as [CERT-EU](http://cert.europa.eu/), [CERT-EE](http://www.cert.ee/), [NCSC-FI](https://www.viestintavirasto.fi/en/cybersecurity.html) and [Synopsys](http://www.abusesa.com), a commercial company.
+A public version of this document has been iterated over, since 2012. Originally, it was a project started by Aaron Kaplan (CERT.at) and Tomas Lima (CERT.pt) in order to understand the internal format that Abusehelper was using. Subsequently it became a collaboration between numerous CSIRT actors (CERT-EU, CERT-AT, CERT-FI, CERT.PT) and Codenomicon. The current version of this document represents the practical collaboration between CSIRT teams such as [CERT-EU](http://cert.europa.eu/), [CERT-EE](http://www.cert.ee/), [NCSC-FI](https://www.viestintavirasto.fi/en/cybersecurity.html) and [Synopsys](http://www.abusesa.com), a commercial company.
+
+# Similar documents
+[intelmq](https://github.com/certtools/intelmq/blob/master/docs/Data-Harmonization.md) has a variation of the harmonisaton document which maps neatly to the Abusehelper DHO.
+
 
