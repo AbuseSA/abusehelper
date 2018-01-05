@@ -8,8 +8,9 @@ pipeline {
       steps {
         sh 'eval "$(pyenv init -)"'
         sh 'pyenv install -s ${PY26_VER}'
+        sh 'pyenv install -s ${PY27_VER}'
         sh 'pyenv install -s ${PYPY2_VER}'
-        sh 'pyenv local ${PY26_VER} system ${PYPY2_VER}'
+        sh 'pyenv local system ${PY26_VER} ${PY27_VER} ${PYPY2_VER}'
         sh 'pip2 install --upgrade tox'
       }
     }
