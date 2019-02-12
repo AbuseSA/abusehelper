@@ -6,18 +6,18 @@ jobs:
     steps:
       - checkout
       - run:
-        command: |
-          sudo pip install tox
-          pip install -r requirements.txt
-          mkdir results
+          command: |
+            sudo pip install tox
+            pip install -r requirements.txt
+            mkdir results
       - run:
-        command: |
-          tox -e flake8
+          command: |
+            tox -e flake8
       - run:
-        command: |
-          tox -e py27 -- --junitxml=results/py27.xml
+          command: |
+            tox -e py27 -- --junitxml=results/py27.xml
       - store_test_results:
-        path: results
+          path: results
       - store_artifacts:
-        path: results
-        destination: results
+          path: results
+          destination: results
