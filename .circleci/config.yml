@@ -12,7 +12,7 @@ jobs:
             mkdir results
       - run:
           command: |
-            sudo tox -e flake8
+            sudo tox -e flake8 abusehelper
       - run:
           command: |
             sudo tox -e py27 -- --junitxml=results/py27.xml
