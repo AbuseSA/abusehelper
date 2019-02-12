@@ -12,10 +12,10 @@ jobs:
             mkdir results
       - run:
           command: |
-            tox -e flake8
+            sudo tox -e flake8
       - run:
           command: |
-            tox -e py27 -- --junitxml=results/py27.xml
+            sudo tox -e py27 -- --junitxml=results/py27.xml
       - store_test_results:
           path: results
       - store_artifacts:
