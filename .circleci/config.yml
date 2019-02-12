@@ -8,7 +8,7 @@ jobs:
       - run:
           command: |
             sudo pip install tox
-            pip install -r requirements.txt
+            sudo pip install -r requirements.txt
             mkdir results
       - run:
           command: |
