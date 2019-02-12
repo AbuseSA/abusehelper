@@ -15,7 +15,7 @@ jobs:
             sudo tox -e flake8 abusehelper
       - run:
           command: |
-            sudo tox -e py27 -- --junitxml=results/py27.xml
+            sudo tox -e py27 -- abusehelper --junitxml=results/py27.xml
       - store_test_results:
           path: results
       - store_artifacts:
