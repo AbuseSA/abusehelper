@@ -61,10 +61,13 @@ The abuse type of an event defines the way an IOC needs to be interpreted. For a
 --- | --- |
 |source as name|The autonomous system name from which the connection originated.|
 |source asn|The autonomous system number from which originated the connection.|
+|source bgp prefix allocated|The date when a Regional Internet Registry (RIR) such as RIPE NCC or ARIN allocated a given BGP prefix.|
+|source bgp prefix|A CIDR associated to an autonomous system.|
 |source cc|The country code of the IP from which the connection originated.|
 |source domain name|A DNS name related to the host from which the connection originated.|
 |source ip|The IP observed to initiate the connection.|
 |source port|The port from which the connection originated.|
+|source geohash|a geocoding system, which encodes a geographic location into a short string of letters and digits.|
 
 ### Destination Identity
 
@@ -74,10 +77,13 @@ Since many of the feeds report events related to a compromised machines (such as
 --- | --- |
 |destination as name|The autonomous system name of the destination of the connection.|
 |destination asn|The autonomous system number of the destination of the connection.|
+|destination bgp prefix allocated|The date when a Regional Internet Registry (RIR) such as RIPE NCC or ARIN allocated a given BGP prefix.|
+|destination bgp prefix|A CIDR associated to an autonomous system.|
 |destination cc|The country code of the IP which was the end-point of the connection.|
 |destination domain name|The DNS name related to the end-point of a connection.|
 |destination ip|The end-point of the connection.|
 |destination port|The destination port of the connection.|
+|destination geohash|a geocoding system, which encodes a geographic location into a short string of letters and digits.|
 
 ### Local Identity
 
@@ -110,6 +116,8 @@ We acknowledge IP geolocation is not an exact science, and our analysis has show
 |country|The country name derived from the ISO 3166 country code (assigned to cc above).|
 |latitude|Latitude coordinate derived from a geolocation service such as the MaxMind GeoIP database.|
 |longitude|Longitude coordinate derived from a geolocation service such as the MaxMind GeoIP database.|
+|geohash|a geocoding system, which encodes a geographic location into a short string of letters and digits.|
+
 
 ## Additional Attributes
 
